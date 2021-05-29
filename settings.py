@@ -12,8 +12,9 @@ loopAfter = False
 
 openSourceText = open('source/source.txt', 'r+')
 stringLink = openSourceText.read().split(';')
-myEmail = 'screted from github'
+myEmail = 'secreted from github'
 myPass = 'secreted from github'
+
 
 def check_price(URL):
     page = requests.get(URL, headers=headers)
@@ -45,7 +46,7 @@ def send_mail(body):
 
     server.login(myEmail, myPass)
 
-    subject = "Hello, This is YOUR Daily Dose of Dopamine"
+    subject = "Hello You, This is YOUR Daily Dose of Copium"
     msg = f'Subject : {subject}\n\n{body}'
 
     server.sendmail(
